@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Logo</title>
+  <style>
+    /* General Styling */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f9f9f9;
+      font-family: 'Arial', sans-serif;
+    }
+
+    /* Logo Container */
+    .google-logo {
+      display: flex;
+      gap: 5px;
+      font-size: 80px;
+      font-weight: bold;
+    }
+
+    /* Individual Letters */
+    .g {
+      color: #4285F4; /* Blue */
+    }
+
+    .o1 {
+      color: #EA4335; /* Red */
+    }
+
+    .o2 {
+      color: #FBBC05; /* Yellow */
+    }
+
+    .g-l {
+      color: #34A853; /* Green */
+    }
+
+    /* Hover Animation */
+    .google-logo span {
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .google-logo span:hover {
+      transform: scale(1.2);
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+<body>
+  <div class="google-logo">
+    <span class="g">G</span>
+    <span class="o1">o</span>
+    <span class="o2">o</span>
+    <span class="g-l">g</span>
+    <span class="o1">l</span>
+    <span class="g">e</span>
+  </div>
+
+  <script>
+    // Optional: Add a click effect to display a message
+    const logo = document.querySelector('.google-logo');
+    logo.addEventListener('click', () => {
+      alert('You clicked the Google logo!');
+    });
+  </script>
+</body>
+</html>
